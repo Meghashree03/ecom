@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useContext,useEffect, useReducer } from "react";
+import {useContext,useEffect, useReducer } from "react";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Card from "react-bootstrap/esm/Card";
@@ -30,6 +30,7 @@ const reducer =(state,action) => {
 };
 
 function ProductScreen() {
+    const navigate = useNavigate();
     const params = useParams();
     const {slug} = params;
     const[{loading,error,product},dispatch] = useReducer(reducer,
@@ -71,8 +72,10 @@ useEffect(()=>{
             type: 'CART_ADD_ITEM',
             payload: { ...product, quantity },
           });
+          navigate('/cart');
     };
 
+    
     return loading? (
      <LoadingBox />
     ):
