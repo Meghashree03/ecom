@@ -48,9 +48,10 @@ function HomeScreen() {
         fetchData();
     }, []);
 
-    return <div>
+    return <div >
         <Helmet>
             <title>Shopzyy</title>
+            
         </Helmet>
          <h1>Featured products</h1>
         <div className="products">
