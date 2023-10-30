@@ -13,11 +13,12 @@ body {
 }
 main {
  flex: 1;
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(210, 229, 250);
 
 }
-.btn-primary {
-  background-color: brown;
+.btn-primary,
+.btn-outline-primary{
+  background-color: rgb(219, 157, 21);
   color: white;
 }
 
@@ -61,4 +62,38 @@ main {
 .checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+
+p1-images {
+  length: 679px;
+  width: 829;
+}
+
+p2-images {
+  
+    length: 679px;
+    width: 829;
+  
 }
