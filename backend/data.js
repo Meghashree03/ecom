@@ -91,7 +91,7 @@ const data ={
         name:"cargo pants",
         slug: "pants",
         category:"pants",
-        image:"/images/dress.jpeg",
+        image:"/images/p5.jpeg",
         price: 250,
         countInStock: 10,
         brand:"levis",
