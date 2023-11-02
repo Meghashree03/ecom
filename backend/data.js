@@ -46,6 +46,18 @@ const data ={
 
         },
         {
+            name:"Headphones",
+            slug: "headphones",
+            category:"Electronics",
+            image:"/images/p8.jpeg",
+            price: 300,
+            countInStock: 7,
+            brand:"sony",
+            rating: 4.5,
+            numReviews: 5,
+            description:"Noise cancelling headbands"
+        },
+        {
             // _id:'3',
             name:"Crocs",
             slug: "Crocs-slides",
@@ -87,6 +99,19 @@ const data ={
             numReviews: 5,
             description:"Maxi dress"
     },
+    {
+        name:"Choker",
+        slug: "choker",
+        category:"Accessories",
+        image:"/images/p6.jpeg",
+        price: 159,
+        countInStock: 7,
+        brand:"meera",
+        rating: 4.5,
+        numReviews: 5,
+        description:"Designer choker neckpiece "
+    },
+
     {
         name:"cargo pants",
         slug: "pants",

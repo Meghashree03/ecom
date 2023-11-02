@@ -101,8 +101,8 @@ const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
                     <LinkContainer to="/profile">
                       <NavDropdown.Item>User Profile</NavDropdown.Item>
                     </LinkContainer>
-                    <LinkContainer to="/orderhistory">
-                      <NavDropdown.Item>Order History</NavDropdown.Item>
+                    <LinkContainer to="/chatbot">
+                      <NavDropdown.Item>Chat here</NavDropdown.Item>
                     </LinkContainer>
                     <NavDropdown.Divider />
                     <Link

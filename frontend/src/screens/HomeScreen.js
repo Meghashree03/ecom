@@ -51,8 +51,35 @@ function HomeScreen() {
     return <div >
         <Helmet>
             <title>Shopzyy</title>
+
+           
             
         </Helmet>
+        <header>
+      <main>
+        <section class="flex-container">
+          <div ><h2>Up to 70% off | Deals on Brands & more</h2>
+            
+            <img src="../images/sa.avif" alt="Hurry order now"/>
+        </div>
+          <div>
+            <h2>Footwear and More! | Order Now</h2>
+            <img src="../images/foot.avif" alt="footwear and more"/>
+        </div>
+          <div>
+            <h2>50% - 80% off | Women's fashion</h2>
+            <img src="../images/dress.avif" alt="women's fashion"/>
+          </div>
+          <div>
+            <h2>Deals on smartphones and electronics</h2>
+            <img src="../images/elec.avif" alt="electronics"/>
+        </div>
+        </section>
+        </main>
+        </header>
+
+            <br></br>
+            <br></br>
          <h1>Featured products</h1>
         <div className="products">
             
