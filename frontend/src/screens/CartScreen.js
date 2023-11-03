@@ -10,6 +10,7 @@ import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+
 export default function CartScreen() {
     const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -37,6 +38,7 @@ export default function CartScreen() {
   };
 
   return (
+    
     <div>
       <Helmet>
         <title>Shopping Cart</title>

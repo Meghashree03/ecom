@@ -8,6 +8,8 @@ import Product from "../components/Product";
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import Bot from '../components/Bot';
+
 
 
 const reducer =(state,action) => {
@@ -48,12 +50,11 @@ function HomeScreen() {
         fetchData();
     }, []);
 
-    return <div >
+    return( <div >
+        <Bot/>
         <Helmet>
             <title>Shopzyy</title>
 
-           
-            
         </Helmet>
         <header>
       <main>
@@ -80,6 +81,10 @@ function HomeScreen() {
 
             <br></br>
             <br></br>
+
+        
+
+            
          <h1>Featured products</h1>
         <div className="products">
             
@@ -96,10 +101,18 @@ function HomeScreen() {
             <Col key ={product.slug} sm={6} md={4} lg={3} className="mb-3">
           <Product product={product}></Product>
           </Col>
+          
           )) }
-          </Row>
+          </Row>  
+          
 )}
           </div>
+          
     </div>
+    
+
+
+    )
 }
+
 export default HomeScreen;

@@ -26,8 +26,7 @@ import axios from 'axios';
 import { getError } from './utils';
 import SearchBox from './components/SearchBox';
 import SearchScreen from './screens/SearchScreen';
-
-
+import ChatBot from './screens/help';
 
 
 
@@ -63,6 +62,7 @@ const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
 
 
   return (
+   
     <BrowserRouter>
      <div className={
           sidebarIsOpen
@@ -144,11 +144,14 @@ const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
                   <Nav.Link>{category}</Nav.Link>
                 </LinkContainer>
               </Nav.Item>
+              
             ))}
           </Nav>
         </div>
 
+    
       <main>
+      
       <Container className="mt-3">
         <Routes>
 
@@ -159,19 +162,33 @@ const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
           <Route path="/shipping"element={<ShippingAddressScreen />}></Route>
           <Route path="/placeorder" element={<PlaceOrderScreen />} />
           <Route path="/signup" element={<SignupScreen />} />
+          <Route path="/chatbot" element={<ChatBot/>}/>
+          
           <Route path="/profile" element={<ProfileScreen />} />
+          
+          
           <Route path="/order/:id" element={<OrderScreen />}></Route>
           <Route path="/payment" element={<PaymentMethodScreen />}></Route>
           <Route path="/" element={<HomeScreen/>}/>
+          
 
         </Routes>
         </Container>
       </main>
+      <div>
+      
+      {/* <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/5da9f7dd-e5da-48f5-a66d-fcc1555569d7"></iframe> */}
+      </div>
+      <helps/>
       <footer>
         <div className='text-center'>All rights reserved</div>
+        
+
         </footer>
     </div>
+              
     </BrowserRouter>
+    
     
      
   );
